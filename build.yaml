@@ -1,2 +1,2 @@
 include:
-  - board: bs_lp_60
+  - board: bs_lp_60//zmk
