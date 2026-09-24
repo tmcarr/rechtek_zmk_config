@@ -19,6 +19,7 @@
 		zephyr,flash = &flash0;
 		zmk,kscan = &kscan;
 		zmk,physical-layout = &default_layout;
+		zephyr,console = &cdc_acm_uart0;
 	};
 
 	leds {
@@ -185,6 +186,9 @@
 
 zephyr_udc0: &usbd {
 	status = "okay";
+	cdc_acm_uart0: cdc_acm_uart0 {
+		compatible = "zephyr,cdc-acm-uart";
+	};
 };
 
 &flash0 {

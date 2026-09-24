@@ -1,4 +1,4 @@
 include:
   - board: bs_lp_60//zmk
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_LOG=y -DCONFIG_BT_SMP_LOG_LEVEL_DBG=y -DCONFIG_BT_CONN_LOG_LEVEL_DBG=y
